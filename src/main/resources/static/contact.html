@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contatti</title>
+</head>
+<body>
+<header>
+  <h1>Micromagia</h1>
+  <h2> La micromagia è una branca della magia, Specializzata nell'illusione ravvicinata, tutt'oggi è il tipo di magia più conosciuto al mondo.</h2>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="artisti.html">Grandi Artisti</a></li>
+      <li><a href="books.html">Libri</a></li>
+      <li><a href="contact.html">Contatti</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <form action="/submitQuestion.jsp">
+
+    <h5>Your personal info:</h5>
+
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname"><br>
+
+
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br>
+
+
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br>
+
+
+    <h5>How are you?</h5>
+
+    <input type="radio" id="student" name="radio_input_job" value="Student">
+    <label for="student">Student</label><br>
+    <input type="radio" id="worker" name="radio_input_job" value="Worker">
+    <label for="worker">Worker</label><br>
+
+
+    <h5>Additional Info:</h5>
+
+
+    <label for="cvFile">Upload your CV:</label>
+    <input type="file" id="cvFile" name="cvFile"><br>
+
+
+    <h5>Submit your question to <b>Uncle Bob</b></h5>
+    <textarea name="question">
+
+        </textarea>
+    <br><br><br>
+
+    <input type="submit" value="Submit">
+
+
+  </form>
+
+  </main>
+
+</body>
+</html>
