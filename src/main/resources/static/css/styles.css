@@ -1,0 +1,47 @@
+/* Modifica il colore e lo stile dei titoli */
+h4 {
+    color: #94b7f3; /* Colore blu brillante */
+    font-family: 'Georgia', sans-serif;
+}
+
+h2
+{
+    color: #94b7f3;
+    text-shadow: 2px 2px 4px rgba(202, 202, 202, 0.2); /* Ombra leggera */
+}
+
+p
+{
+    font-size: 20px;
+    color: white;
+}
+
+
+/* Cambia lo stile della navbar */
+.nav-link {
+    color: #ffffff; /* Cambia il colore dei link della navbar */
+    font-weight: bold; /* Rende il testo in grassetto */
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Sottolinea il link al passaggio del mouse */
+}
+
+/* Personalizza la tabella */
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+    border-color: black !important;
+}
+
+.card
+{
+    border-radius: 1em;
+}
+
+.art
+{
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
