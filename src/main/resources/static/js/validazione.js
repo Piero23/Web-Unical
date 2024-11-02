@@ -1,14 +1,14 @@
 
-console.log("FUNZIA");
+console.log("Validazione form Hello");
 
 document.getElementById("forMaghi").onsubmit = function (e){
-    var nome = document.getElementById("fname").value;
-    var cognome =document.getElementById("lname").value;
-    var email = document.getElementById("email").value;
-    var bDay = document.getElementById("birthday").value;
-    var maghi = document.getElementById("maghi").value;
-    var video = document.getElementById("cvFile").value;
-    var des = document.getElementById("question").value;
+    const nome = document.getElementById("fname").value;
+    const cognome = document.getElementById("lname").value;
+    const email = document.getElementById("email").value;
+    const bDay = document.getElementById("birthday").value;
+    const maghi = document.getElementById("maghi").value;
+    const video = document.getElementById("cvFile").value;
+    const des = document.getElementById("question").value;
 
 
     if(nome == null || nome == "" ||

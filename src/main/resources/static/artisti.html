@@ -121,78 +121,84 @@
            </div>
        </section>
 
-       <form id="forMaghi"  class="row g-3 card bg-dark p-3 border border-white">
 
-           <h2 class="text-center mb-3">Diventa Anche tu un Grande Mago!</h2>
+       <h3><label for="additionalInfoAccordion" class="mb-2">Form per Illusionisti</label></h3>
+       <div class="accordion mb-4" id="additionalInfoAccordion">
+           <div class="accordion-item">
+               <h2 class="accordion-header" id="headingOne">
+                   <button class="accordion-button bg-primary text-white text-40" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                       Compila il Form e diventa anche tu un grande Mago! Clicca Qui!
+                   </button>
+               </h2>
+               <div id="collapseOne" class="accordion-collapse collapse show bg-dark" aria-labelledby="headingOne"
+                    data-bs-parent="#additionalInfoAccordion">
+                   <div class="accordion-body">
+                       <form id="forMaghi"  class="row g-3 cardp-3 ">
 
-           <h4>Informazioni Personali:</h4>
+                           <h2 class="text-center mb-3">Diventa Anche tu un Grande Mago!</h2>
 
-           <div class="col-md-6">
-               <label for="fname" class="text-white">Nome:</label>
-               <input type="text" id="fname" class="form-control">
-           </div>
+                           <h4>Informazioni Personali:</h4>
 
-           <div class="col-md-6">
-               <label for="lname" class="text-white">Cognome:</label>
-               <input type="text" id="lname" class="form-control">
-           </div>
+                           <div class="col-md-6">
+                               <label for="fname" class="text-white">Nome:</label>
+                               <input type="text" id="fname" class="form-control">
+                           </div>
 
-           <div class="col-md-12">
-               <label for="email" class="text-white">Email:</label>
-               <input type="email" id="email" name="email" class="form-control">
-           </div>
+                           <div class="col-md-6">
+                               <label for="lname" class="text-white">Cognome:</label>
+                               <input type="text" id="lname" class="form-control">
+                           </div>
 
-           <div class="col-md-12 mb-4">
-               <label for="birthday" class="text-white">Data di Nascita:</label>
-               <input type="date" id="birthday" name="birthday" class="form-control">
-           </div>
+                           <div class="col-md-12">
+                               <label for="email" class="text-white">Email:</label>
+                               <input type="email" id="email" name="email" class="form-control">
+                           </div>
 
-           <h4>Scegli il tuo illusionista preferito</h4>
+                           <div class="col-md-12 mb-4">
+                               <label for="birthday" class="text-white">Data di Nascita:</label>
+                               <input type="date" id="birthday" name="birthday" class="form-control">
+                           </div>
 
-           <div class="col-md-12 mb-4">
-               <select name="maghi" id="maghi" >
-                   <option value="Nessuno">---Opzioni---</option>
-                   <option value="Criss">Criss Angel</option>
-                   <option value="David">David Blane</option>
-                   <option value="Dough">Dough Henning</option>
-                   <option value="Dynamo">Dynamo</option>
-                   <option value="Houdini">Harry Houdini</option>
-                   <option value="Blackstone">Harry Blackstone</option>
-                   <option value="Burton">Lance Burton</option>
-                   <option value="Howard">Howard Thurston</option>
-               </select>
-           </div>
+                           <h4>Scegli il tuo illusionista preferito</h4>
 
-           <h4>La tua performance:</h4>
-           <!-- Accordion per nascondere o mostrare informazioni aggiuntive come il CV -->
-           <div class="accordion mb-4" id="additionalInfoAccordion">
-               <div class="accordion-item">
-                   <h2 class="accordion-header" id="headingOne">
-                       <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
-                               data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                           Mostraci la tua Performance
-                       </button>
-                   </h2>
-                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#additionalInfoAccordion">
-                       <div class="accordion-body">
-                           <input type="file" id="cvFile" name="cvFile" class="form-control">
-                       </div>
+                           <div class="col-md-12 mb-4">
+                               <select name="maghi" id="maghi" >
+                                   <option value="Nessuno">---Opzioni---</option>
+                                   <option value="Criss">Criss Angel</option>
+                                   <option value="David">David Blane</option>
+                                   <option value="Dough">Dough Henning</option>
+                                   <option value="Dynamo">Dynamo</option>
+                                   <option value="Houdini">Harry Houdini</option>
+                                   <option value="Blackstone">Harry Blackstone</option>
+                                   <option value="Burton">Lance Burton</option>
+                                   <option value="Howard">Howard Thurston</option>
+                               </select>
+                           </div>
+
+                           <div class="mb-3">
+                               <h4>La tua performance:</h4>
+                               <input type="file" id="cvFile" name="cvFile" class="form-control">
+                           </div>
+                           <h4 class="text-center">Descrivici che tipo di illusionista sei</h4>
+
+                           <div class="col-md-12">
+                               <textarea name="question" id="question" class="form-control"></textarea>
+                           </div>
+
+
+                           <div class="col-md-12 text-center mt-3 mb-4">
+                               <input type="submit" value="Invia" class="btn btn-primary me-2">
+                               <input type="reset" value="Canella" class="btn btn-secondary">
+                           </div>
+                       </form>
+
                    </div>
                </div>
            </div>
+       </div>
 
-           <h4 class="text-center">Descrivici che tipo di illusionista sei</h4>
 
-           <div class="col-md-12">
-               <textarea name="question" id="question" class="form-control"></textarea>
-           </div>
-
-           <div class="col-md-12 text-center mt-3 mb-4">
-               <input type="submit" value="Invia" class="btn btn-primary me-2">
-               <input type="reset" value="Canella" class="btn btn-secondary">
-           </div>
-       </form>
    </main>
 
 

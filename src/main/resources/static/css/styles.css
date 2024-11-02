@@ -1,5 +1,5 @@
 /* Modifica il colore e lo stile dei titoli */
-h4 {
+h4 ,h3 {
     color: #94b7f3; /* Colore blu brillante */
     font-family: 'Georgia', sans-serif;
 }
